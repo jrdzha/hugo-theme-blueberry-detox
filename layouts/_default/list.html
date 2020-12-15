@@ -11,6 +11,7 @@
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
+	{{ partial "home.html" . }}
 	{{ range .Paginator.Pages }}
 		{{ .Render "li" }}
 	{{ end }}
